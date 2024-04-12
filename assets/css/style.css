@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 25px;
   color: #12d640;
 }
 
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header Top */
 #header.header-top {
-  height: 90px;
+  height: 70px;
   position: fixed;
   left: 0;
   top: 0;
@@ -407,7 +407,7 @@ section .container {
 }
 
 .counts .count-box {
-  padding: 30px 30px 25px 30px;
+  padding: 30px 30px 20px 30px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -443,37 +443,86 @@ section .container {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
+
+ /* CSS Styles */
+ body {
+  font-family: Arial, sans-serif; /* Default font */
+  background-color: #f8f9fa; /* Light gray background */
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
+.services {
+  padding: 60px 0;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: chartreuse; /* Dark gray text */
+  /* text-align: center;  Remove center alignment */
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
   display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the line */ 
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.icon-box {
+  background: #fff; /* White box background */
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center; /* Center-align the content */
 }
 
-.skills .progress-bar-wrap {
-  background: rgba(255, 255, 255, 0.15);
+.icon-box h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: chartreuse; /* Dark gray text */
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #1c7d32;
+.icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
 }
+
+.skill-box {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff; /* White text */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: teal; /* Sky blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Hover effect */
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /*--------------------------------------------------------------
 # Interests
